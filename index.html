@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Weather App by Wasim</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://momentjs.com/downloads/moment.min.js"></script>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Weather App by WS</h1>
+
+        <input type="text" id="city-input" placeholder="Enter city name">
+
+        <button onclick="weatherFn(document.getElementById('city-input').value)">
+            Get Weather
+        </button>
+
+        <div id="weather-info">
+
+            <h3 id="city-name"></h3>
+
+            <p id="date"></p>
+
+            <img id="weather-icon" src="" alt="Weather Icon">
+
+            <p id="temperature"></p>
+
+            <p id="description"></p>
+
+            <p id="wind-speed"></p>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
